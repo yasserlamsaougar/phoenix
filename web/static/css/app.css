@@ -10,3 +10,7 @@
     position: relative;
     margin-bottom: 25px;
 }
+
+.topic-actions > a {
+    padding: 5px;
+}
