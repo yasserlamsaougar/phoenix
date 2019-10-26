@@ -14,3 +14,8 @@
 .topic-actions > a {
     padding: 5px;
 }
+
+.auth-actions {
+    outline: none;
+    text-decoration: none;
+}
