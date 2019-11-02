@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript">
+      window.discuss = window.discuss || {}
+            <%= if @conn.assigns.user do %>
+      window.discuss.userToken = '<%= Phoenix.Token.sign(Discuss.Endpoint, "key", @conn.assigns.user.id) %>'
+            <% end %>
+    </script>
   </head>
   <body>
     <nav class="light-blue">
