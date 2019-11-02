@@ -15,7 +15,9 @@
     padding: 5px;
 }
 
-.auth-actions {
+.auth-actions a {
     outline: none;
     text-decoration: none;
+    color: white;
+    
 }
